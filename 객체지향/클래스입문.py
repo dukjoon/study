@@ -5,5 +5,11 @@
 # 클래스: 어떤 데이터가 있는지, 어떤 조작을 할 수 있는지, 제약조건이 있는지 추상적인 설계도
 # 인스턴스: 그 클래스로 만든 실제 예시 (For instance = 예를 들면)
 
+class Post:
+    author = None
+    comments = []
+    likes = 0
+    content = "What are you doing?"
+
 
 
