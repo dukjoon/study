@@ -31,7 +31,7 @@ def encode(password):
         encoded += encode_char(char)
     
     # 맨 끝에 암호화된 문자열의 길이의 일의 자리 숫자를 붙입니다.
-    result = encoded + (len(encoded) % 10)
+    result = encoded + str(len(encoded) % 10)
     
     return result
 
@@ -39,15 +39,14 @@ def encode(password):
 def decode(encoded_password):
     
     # 맨 끝에 붙은 수를 제거합니다.
-    size = len(result)
-    number_stripped = result[:size-1]
+    number_stripped = encoded_password[:-1]
 
     # 각 글자를 복호화하여 이어 붙입니다.
     decoded = ""
-    for None in []:
-        pass
+    for char in number_stripped:
+        decoded += decode_char(char)
     
     # 문자열을 뒤집습니다.
-    result = None
+    result = reverse_string(decoded)
     
     return result
