@@ -7,21 +7,21 @@
 def calculate_age(year_of_birth):
     this_year = 2022
     return this_year - year_of_birth + 1
-    
+
 age = calculate_age(1988)
 
-def roll_dice():
-    return random.randint(1, 6)
+# def roll_dice():
+#     # return random.randint(1, 6)
 
-def count_down(seconds):
-    while seconds >= 0:
-        print(seconds)
-        time.sleep(1)
-        second -= 1
-        # seconds = 5라고 했을 때, 5, 4, 3, 2, 1(1초 간격)
+# def count_down(seconds):
+#     while seconds >= 0:
+#         print(seconds)
+#         time.sleep(1)
+#         second -= 1
+#         # seconds = 5라고 했을 때, 5, 4, 3, 2, 1(1초 간격)
 
-#return 값과 print가 있다.
+# #return 값과 print가 있다.
 
-def clock_hourly():
-    while True:
-        print(date.time_now)
+# def clock_hourly():
+#     while True:
+#         print(date.time_now)
